@@ -1,24 +1,23 @@
 <template>
   <div id="app">
     <Navbar />
-      <div class="container">
-        <router-view/>
-      </div>
+    <div class="container">
+      <router-view />
+    </div>
   </div>
 </template>
 
 <script>
-import Navbar from './components/Navbar'
+import Navbar from "./components/Navbar";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Navbar
-  }
-}
+    Navbar,
+  },
+};
 </script>
 
 <style>
-  @import './assets/styles/index.css';
-
+@import "./assets/styles/index.css";
 </style>
 
