@@ -6,14 +6,38 @@
 ``` bash
 # Create Firebase project
 Create db in test mode > create collection(db)
-
+```
+``` bash
 # Create Vue Project
 npm install -g vue-cli
->go to the project folder with cd and
+```
+``` bash
+# Go to the project folder with cd and
 vue init webpack appName > cd to appName and npm install
->install firebase
+```
+``` bash
+# Install firebase
 npm install firebase --save
 ```
+
+``` bash
+# Apply firebase settings to the project
+create firebaseConfig.js which contains  in components folder
+
+export default {
+apikeyvs. information in firebase
+}
+
+create firebaseInit.js which contains
+
+import firebase from 'firebase/app'
+import  'firebase/firestore'
+import firebaseConfig from './firebaseConfig'
+
+const firebaseApp = firebase.initializeApp(firebaseConfig)
+export default firebaseApp.firestore()
+```
+
 
 ## Build Setup
 ``` bash
@@ -25,9 +49,6 @@ npm run dev
 
 # build for production with minification
 npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
