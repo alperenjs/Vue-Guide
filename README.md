@@ -1,9 +1,21 @@
 # vuecrud
 
-> A Vue.js project
+ This project aims to maintain basics of Vue.js project construction through CRUD functions via Google Firebase.
+
+## How to setup a Vue.js project via firebase
+``` bash
+# Create Firebase project
+Create db in test mode > create collection(db)
+
+# Create Vue Project
+npm install -g vue-cli
+>go to the project folder with cd and
+vue init webpack appName > cd to appName and npm install
+>install firebase
+npm install firebase --save
+```
 
 ## Build Setup
-
 ``` bash
 # install dependencies
 npm install
