@@ -1,4 +1,4 @@
-# vuecrud with CLI and Firebase
+# vuecrud with CLI2.9.6 and Firebase
 
  This project aims to maintain basics of Vue.js project construction through CRUD functions via Google Firebase.
  This project is created with Vue-cli which provides us choosing a starter pack which contains, libraries we choose, webpack for bundnling, choosing ts, js, css styles and enable HMR(hot modules replacement) live update.
